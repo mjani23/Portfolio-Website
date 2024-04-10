@@ -10,6 +10,7 @@ body{
     background-color: rgb(5, 34, 39);
     width: 100vw;
     /* height: 100vh; */
+    
     margin: 0;
     padding: 0;
     text-align: center;
@@ -47,9 +48,22 @@ body{
     flex-direction: row;
     border: 1px solid rgb(255, 255, 255);
     align-items: center;
-    width: 100%;
-    height: 100%;   
+    width: 200px;
+    height: 50px;
+    /* width: 100%;
+    height: 100%;    */
 
+
+}
+#buttonbar{
+    display: flex;
+    flex-direction: row;
+
+    /* border: 1px solid rgb(255, 255, 255); */
+    align-items: center;
+    margin: auto;
+    /* width: 100%;
+    height: 100%;    */
 
 }
 
