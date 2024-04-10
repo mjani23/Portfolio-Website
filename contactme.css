@@ -10,7 +10,6 @@ body{
     background-color: rgb(5, 34, 39);
     width: 100vw;
     /* height: 100vh; */
-    height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -24,6 +23,7 @@ body{
     font-size: 44px;
 }
 #top{
+    position:fixed;
     background-color: #9ac2c9ff;
     flex-direction: column;
     display: flex;
@@ -42,20 +42,35 @@ body{
     height: 55px;
     background-color: #9ac2c9ff;
 }
+#buttonbar{
+    display: flex;
+    flex-direction: row;
 
+    /* border: 1px solid rgb(255, 255, 255); */
+    align-items: center;
+    margin: auto;
+    /* width: 100%;
+    height: 100%;    */
+
+}
 #button{
     display: flex;
     flex-direction: row;
     border: 1px solid rgb(255, 255, 255);
     align-items: center;
     width: 200px;
-    height: 50px;
-    /* width: 100%;
-    height: 100%;    */
+    height: 50px;   
 
 
 }
+#topgap{
+    background-color: rgb(5, 34, 39);
+    display: flex;
+ 
+    width: 100%;
+    height: 200px;
 
+}
 #camera{
     background-color: rgb(5, 34, 39);
     display: flex;
@@ -144,7 +159,7 @@ body{
     display: flex;
     margin-top: 10px;
     margin-left: 5px;
-    margin-right: 150px;
+    margin-right: 120px;
     flex-direction: row;
     width: 20px;
     height: 20px;
@@ -194,7 +209,7 @@ a:active{
 .text{
     display: flex;
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 30px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
