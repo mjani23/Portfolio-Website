@@ -99,13 +99,14 @@ body{
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 38rem;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto; 
     border-radius: 20px;
     margin-bottom: 2rem;
     scroll-margin-top: 17rem;
+    padding-bottom: 5rem;
+
 }
 
 #circles{
