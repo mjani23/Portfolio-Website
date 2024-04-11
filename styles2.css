@@ -38,14 +38,15 @@ body{
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    width: 80%;
     background-color: #9ac2c9ff;
+    width: 80%;
 }
 #buttonbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: auto;
+    width: 100%;
 
 }
 #button{
@@ -53,8 +54,13 @@ body{
     flex-direction: row;
     border: 1px solid rgb(255, 255, 255);
     align-items: center;
-    width: 15rem;
-    height: 3rem;   
+    /* width: 15rem;
+    height: 3rem;    */
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; */
+    height: 3rem;
 
 
 }
@@ -93,12 +99,13 @@ body{
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 35rem;
+    height: 38rem;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto; 
     border-radius: 20px;
     margin-bottom: 2rem;
+    scroll-margin-top: 17rem;
 }
 
 #circles{
@@ -173,6 +180,7 @@ a {
     margin: 0 auto;
     color: rgb(255, 253, 253);
     text-decoration: none;
+    flex-grow: 1;
 }
 
 a:link{
