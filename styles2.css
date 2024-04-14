@@ -42,7 +42,7 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at var(--x) var(--y), hsla(195, 42%, 71%, 0.258), transparent 15vmin);
+    background: radial-gradient(circle at var(--x) var(--y), hsla(195, 98%, 83%, 0.245), transparent 15vmin);
     background-attachment: fixed;
     opacity: 0; /* Start as invisible */
     transition: opacity 0.2s;
