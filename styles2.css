@@ -5,7 +5,7 @@
 
 }
 
-:root *::-webkit-scrollbar {
+:root::-webkit-scrollbar {
     display: none;
 
 }
@@ -18,7 +18,7 @@ body{
 #main{
     display: flex;
     background-color: rgb(7, 4, 28);
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -27,18 +27,39 @@ body{
     background-image: linear-gradient(120deg, #030210 0%, #001743 100%);
     min-height: 100vh;
 
+
+    width: 100%;
+    background-image: linear-gradient(hsla(191, 43%, 74%, 0.25) .1em, transparent .1em), linear-gradient(90deg, hsla(191, 43%, 74%, 0.25) .1em, transparent .1em);
+    background-size: 3em 3em;
+    overflow: hidden;
+
+}
+/* Spotlight Effect */
+#main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--x) var(--y), hsla(195, 42%, 71%, 0.258), transparent 15vmin);
+    background-attachment: fixed;
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.2s;
+    pointer-events: none;
 }
 
+#main:hover::after {
+    opacity: 1; 
+}
 #Name{
     margin-top: 1rem;
     color: rgb(255, 255, 255);
     font-size: 3rem;
     height: 3rem;
 }
+
 #top{
     position:fixed;
     z-index: 10;
-    background-color: #9ac2c9ff;
+    background-color: hwb(189 60% 21%);
     flex-direction: column;
     display: flex;
     width: 100%;
@@ -106,6 +127,8 @@ body{
 }
 
 .terminal{
+    z-index: 4;
+
     background-color: rgb(36, 38, 39);
     display: flex;
     flex-direction: column;
@@ -274,3 +297,4 @@ a:active{
 
     
 }
+

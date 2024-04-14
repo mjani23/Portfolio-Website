@@ -127,4 +127,26 @@
 
     
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainElement = document.getElementById('main');
+        
+        function updateCursor(e) {
+            if (mainElement) {
+                const rect = mainElement.getBoundingClientRect();
+                // Calculate the cursor's position relative to the main element
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+    
+                mainElement.style.setProperty('--x', `${x}px`);
+                mainElement.style.setProperty('--y', `${y}px`);
+            }
+        }
+    
+        mainElement.addEventListener('pointermove', updateCursor);
+    });
+</script>
+    
+    
 </html>
