@@ -1,14 +1,36 @@
-
+/* Hide scrollbars globally for all elements */
 * {
     box-sizing: border-box;
-    scrollbar-width: none;
-
+    scrollbar-width: none; 
 }
 
-:root::-webkit-scrollbar {
-    display: none;
-
+*::-webkit-scrollbar {
+    display: none; 
 }
+
+#LinkedList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Only show scrollbar when content overflows */
+    height: 25rem;
+    align-items: center;
+}
+
+#LinkedList::-webkit-scrollbar {
+    display: block;
+    width: 12px; 
+}
+
+#LinkedList::-webkit-scrollbar-thumb {
+    background-color: rgb(169, 169, 169);
+    border-radius: 10px;
+}
+
+#LinkedList {
+    scrollbar-width: thin; 
+    scrollbar-color: darkgrey lightgrey; 
+}
+
 
 body{
     margin: 0;
@@ -268,17 +290,6 @@ a:active{
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: left;
-}
-#LinkedList{
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    height: 25rem;
-    align-items: center;
-
- 
-    
-    
 }
 
 .box{
